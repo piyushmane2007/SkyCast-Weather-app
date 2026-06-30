@@ -1,4 +1,4 @@
-from flask import Flask,request,redirect,url_for,render_template 
+from flask import Flask,request,render_template 
 import requests
 
 app = Flask(__name__) 
@@ -9,7 +9,7 @@ def home():
     if request.method=="POST":
 
         city = request.form.get("city")
-        api_key = "e1ec8cb28a274595a7c64648262906 "
+        api_key = "e1ec8c............ "
         url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
         response = requests.get(url)
         if city:
@@ -21,11 +21,6 @@ def home():
                             condition=data["current"]["condition"]["text"],
                             humidity=data["current"]["humidity"]) 
     return render_template("index.html")
-
-    
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
