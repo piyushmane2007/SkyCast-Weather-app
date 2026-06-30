@@ -22,6 +22,9 @@ The app allows users to search for any city and view its current weather informa
 * Requests library
 * WeatherAPI (REST API)
 
+## Demo 
+https://www.linkedin.com/posts/piyush-mane-0b89013aa_python-flask-webdevelopment-activity-7477559435079417856-tTC5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGQoU0wB8MYCvrUWtANIqNjsRY2yFAMj4xA
+
 ## What I Learned
 
 * Flask routing and request handling
