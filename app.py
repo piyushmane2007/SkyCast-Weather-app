@@ -9,7 +9,7 @@ def home():
     if request.method=="POST":
 
         city = request.form.get("city")
-        api_key = "e1ec8c............ "
+        api_key = "YOUR_API_KEY "
         url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
         response = requests.get(url)
         if city:
